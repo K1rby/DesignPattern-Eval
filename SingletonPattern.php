@@ -11,7 +11,7 @@ class BaseDeDonnee {
      */
     public function __toString() {
 
-        return $this->editRecord() .' '. strtoupper($this->getName());
+        return 'record numéro:'.$this->editRecord() .' nom:'. strtoupper($this->getName());
     }
 
     /**
@@ -59,5 +59,4 @@ class BaseDeDonnee {
 $bdd = BaseDeDonnee::getInstance('nomBDD','2');
 
 // Appel implicite à la méthode __toString()
-echo $bdd->getName();
 echo $bdd;

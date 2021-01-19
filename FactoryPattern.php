@@ -9,7 +9,7 @@ class ConsoleLogger implements LoggerInterface
 {
     public function log()
     {
-        return ("enregistrement console log");
+        return ("enregistrement console log\n");
     }
 }
 
@@ -17,7 +17,7 @@ class FileLogger implements LoggerInterface
 {
     public function log()
     {
-        return ("enregistrement file log");
+        return ("enregistrement file log\n");
     }
 }
 
@@ -25,7 +25,7 @@ class DBLogger implements LoggerInterface
 {
     public function log()
     {
-        return ("enregistrement db log");
+        return ("enregistrement db log\n");
     }
 }
 
